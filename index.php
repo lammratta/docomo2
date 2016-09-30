@@ -1,12 +1,12 @@
 <?php
 // 設定
-define('DOCOMO_API_KEY', '');
-define('DOCOMO_MODE', 'dialog');
-define('LINE_CHANNEL_ID', '');
-define('LINE_CHANNEL_SECRET', '');
-define('LINE_MID', '');
+define('DOCOMO_API_KEY', '');   // defineで定数を定義
+define('DOCOMO_MODE', 'dialog');   // defineで定数を定義
+define('LINE_CHANNEL_ID', '');   // defineで定数を定義
+define('LINE_CHANNEL_SECRET', '');   // defineで定数を定義
+define('LINE_MID', '');   // defineで定数を定義
 
-require_once(__DIR__ . '/vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');   // 外部ファイルを一度だけ読み込む
 use jp3cki\docomoDialogue\Dialogue;
 
 $app = new Silex\Application();
